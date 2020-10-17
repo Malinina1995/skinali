@@ -1,0 +1,100 @@
+.navbar {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+  }
+
+  &__mobile, &__landline {
+    text-align: right;
+  }
+
+  &__small-text {
+    display: block;
+    color: $text-color-light;
+    font-size: $small-text;
+    text-decoration: none;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 19px;
+    @include bold;
+    text-decoration: none;
+    color: $text-color-main;
+    margin-bottom: 5px;
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  left: 0;
+  padding: 16px 0;
+  width: 100%;
+  background-color: $text-color-blue;
+  transition: .2s;
+  transform: translateY(-100%);
+
+  &_active {
+    transform: translateY(0);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid rgba(81, 11, 186, 0.1);
+    border-right: 1px solid rgba(81, 11, 186, 0.1);
+    height: 80px;
+    width: 70px;
+
+    &__line {
+      display: block;
+      width: 20px;
+      height: 3px;
+      background-color: #89a9eb;
+      margin: 2px 0;
+    }
+  }
+}
+
+.logo {
+  &__text {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    @include bold;
+  }
+  &__description {
+    display: block;
+    font-size: $small-text;
+    color: $text-color-light;
+  }
+}

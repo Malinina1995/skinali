@@ -1,0 +1,28 @@
+
+body {
+  @include light;
+  color: $text-color-main;
+}
+
+button {
+  outline: none;
+}
+
+.button-outline {
+  border: 2px solid $text-color-blue;
+  padding: 17px 22px;
+  font-size: 12px;
+  @include bold;
+  color: $text-color-blue;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.button {
+  padding: 25px 45px;
+  border: none;
+  text-transform: uppercase;
+  @include bold;
+  color: #fff;
+  background-color: $text-color-blue;
+}

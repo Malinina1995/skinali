@@ -1,8 +1,17 @@
-* {
-  box-sizing: border-box
-}
-.test {
-  .asd {
-    color: wheat;
-  }
-}
+//Базовые настройки сетки
+@import "grid";
+
+//Настройки шрифтов
+@import "fonts";
+
+//Цвета
+@import "colors";
+
+//Настройки интерфейса
+@import "interface";
+
+//Шапка сайта
+@import "navbar";
+
+//Блок hero
+@import "hero";

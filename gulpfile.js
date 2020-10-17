@@ -17,11 +17,6 @@ gulp.task('browser-sync', function () {
     })
 });
 
-function bsReload(done) {
-    browserSync.reload();
-    done()
-}
-
 gulp.task('code', function () {
     return gulp.src('src/**/*.html')
         .pipe(browserSync.reload({stream: true}))
@@ -30,7 +25,8 @@ gulp.task('code', function () {
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./src/css'));
+        .pipe(gulp.dest('./src/css'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('js', function () {
