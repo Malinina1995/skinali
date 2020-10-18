@@ -93,6 +93,7 @@
     text-transform: uppercase;
     @include bold;
   }
+
   &__description {
     display: block;
     font-size: $small-text;

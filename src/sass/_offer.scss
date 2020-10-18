@@ -1,5 +1,6 @@
 .offer {
   padding: 129px 0;
+
   &-block {
     background: #fff url("../img/offer-bg.png") no-repeat center right;
     background-size: contain;
@@ -28,6 +29,7 @@
     align-items: center;
     max-width: 900px;
     margin-bottom: 25px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -53,6 +55,7 @@
     width: 100%;
     border-right-width: 0;
     outline: none;
+
     &:last-child {
       border-right-width: 1px;
     }
@@ -69,6 +72,8 @@
 
 @media (max-width: 991px) {
   .offer {
+    padding: 129px 0 70px;
+
     &-block {
       background: #fff none;
       padding: 40px;
