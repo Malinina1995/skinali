@@ -17,3 +17,36 @@
     @include bold;
   }
 }
+
+@media (max-width: 991px) {
+  .hero {
+
+    &__title, &__subtitle {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      padding: 20px 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 60px;
+    background-size: 100%;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__button {
+      padding: 10px 20px;
+    }
+
+  }
+}

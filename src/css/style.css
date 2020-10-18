@@ -5,6 +5,19 @@
   max-width: 1170px;
   margin: auto; }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px; } }
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px; } }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px; } }
+
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -43,6 +56,10 @@ button {
   color: #fff;
   background-color: #507fe1; }
 
+@media (max-width: 576px) {
+  .button-outline {
+    font-size: 10px; } }
+
 .navbar {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -53,8 +70,7 @@ button {
   .navbar-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-height: 80px; }
+    align-items: center; }
   .navbar__mobile, .navbar__landline {
     text-align: right; }
   .navbar__small-text {
@@ -79,9 +95,11 @@ button {
   width: 100%;
   background-color: #507fe1;
   transition: .2s;
-  transform: translateY(-100%); }
+  transform: translateY(-200%);
+  opacity: 0; }
   .menu_active {
-    transform: translateY(0); }
+    transform: translateY(0);
+    opacity: 1; }
   .menu__nav {
     display: flex;
     justify-content: space-around;
@@ -121,6 +139,22 @@ button {
   font-size: 14px;
   color: #7b7b79; }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none; } }
+
+@media (max-width: 576px) {
+  .logo {
+    display: none; }
+  .menu {
+    top: 60px; }
+    .menu-icon {
+      height: 60px; }
+    .menu__nav {
+      flex-direction: column; }
+    .menu__link {
+      margin-bottom: 20px; } }
+
 .hero {
   background: #f1f1f1 url("../img/hero-bg.jpg") no-repeat center top;
   background-size: contain;
@@ -135,3 +169,20 @@ button {
     font-size: 30px;
     margin-bottom: 67px;
     font-family: 'Proxima Nova Semibold', sans-serif; }
+
+@media (max-width: 991px) {
+  .hero__title, .hero__subtitle {
+    font-size: 20px; }
+  .hero__subtitle {
+    margin-bottom: 30px; }
+  .hero__button {
+    padding: 20px 30px; } }
+
+@media (max-width: 576px) {
+  .hero {
+    margin-top: 60px;
+    background-size: 100%; }
+    .hero__title {
+      margin-bottom: 30px; }
+    .hero__button {
+      padding: 10px 20px; } }

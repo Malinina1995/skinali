@@ -26,3 +26,9 @@ button {
   color: #fff;
   background-color: $text-color-blue;
 }
+
+@media (max-width: 576px) {
+  .button-outline {
+    font-size: 10px;
+  }
+}
