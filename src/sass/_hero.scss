@@ -1,6 +1,6 @@
 .hero {
   background: #f1f1f1 url("../img/hero-bg.jpg") no-repeat center top;
-  background-size: contain;
+  background-size: cover;
   padding-top: 120px;
   padding-bottom: 270px;
   margin-top: 80px;
@@ -20,6 +20,8 @@
 
 @media (max-width: 991px) {
   .hero {
+    background-size: contain;
+    padding-bottom: 130px;
 
     &__title, &__subtitle {
       font-size: 20px;
@@ -45,6 +47,7 @@
     }
 
     &__button {
+      height: 40px;
       padding: 10px 20px;
     }
 

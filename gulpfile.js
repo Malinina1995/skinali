@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
+const autoprefixer = require('gulp-autoprefixer');
 
 sass.compiler = require('node-sass');
 
@@ -25,6 +26,9 @@ gulp.task('code', function () {
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            browsers: ['IE 11', 'last 2 versions', 'not ie 10']
+        }))
         .pipe(gulp.dest('./src/css'))
         .pipe(browserSync.reload({stream: true}));
 });
