@@ -706,3 +706,32 @@ button {
     margin: 0;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; } }
+
+.contacts {
+  background-color: #f6f7f9; }
+  .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .contacts-block__item {
+      text-align: center; }
+  .contacts__image {
+    margin-bottom: 25px; }
+  .contacts__text {
+    font-size: 16px; }
+  .contacts__link, .contacts__address {
+    text-decoration: none;
+    color: #7b7b79; }
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 20px; }
+  .contacts__address {
+    max-width: 200px;
+    margin: auto; } }
