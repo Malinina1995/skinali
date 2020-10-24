@@ -1,0 +1,30 @@
+.questions {
+  &__title {
+    font-size: 30px;
+    @include bold
+  }
+  &__link {
+    font-size: 24px;
+    color: $text-color-blue;
+  }
+  &-block {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .questions {
+    &-block {
+      flex-direction: column;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+}
