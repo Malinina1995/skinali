@@ -2,11 +2,19 @@
   padding: 129px 0;
 
   &-block {
-    background: #fff url("../img/offer-bg.png") no-repeat center right;
-    background-size: contain;
     padding: 80px;
     margin-top: -200px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+    &_calc-bg {
+      background: #fff url("../img/offer-bg.png") no-repeat center right;
+      background-size: contain;
+    }
+
+    &_price-bg {
+      background: #fff url("../img/offer-bg-2.png") no-repeat center right;
+      background-size: contain;
+    }
   }
 
   &__title {
@@ -20,6 +28,7 @@
     display: block;
     font-size: 21px;
     margin-bottom: 48px;
+    max-width: 800px;
   }
 }
 
@@ -39,6 +48,12 @@
     height: 80px;
     width: 100%;
     outline: none;
+  }
+
+  &__policy {
+    display: inline-block;
+    margin-left: 45px;
+    font-size: 17px;
   }
 
   &__label {
@@ -89,6 +104,10 @@
       }
     }
 
+    &__policy {
+      margin: 10px 0 0 0;
+    }
+
     &__group {
       width: 100%;
     }
@@ -116,11 +135,6 @@
   }
 
   .form {
-    &__row {
-
-      &-checkbox {
-      }
-    }
 
     &__button {
       height: 40px;
