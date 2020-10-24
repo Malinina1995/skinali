@@ -31,6 +31,9 @@ button {
   color: #fff;
   background-color: $text-color-blue;
   text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
 
   &-fitting {
     color: $text-color-blue;
@@ -116,8 +119,11 @@ button {
 }
 
 @media (max-width: 576px) {
-  .button-outline {
+  .button {
     font-size: 10px;
+    &-outline {
+      font-size: 10px;
+    }
   }
 
   .input {
