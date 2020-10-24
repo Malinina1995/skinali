@@ -1,7 +1,7 @@
 .price {
   &-block {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     &__card {
       margin-bottom: 10px;
@@ -10,7 +10,6 @@
   &-card {
     background-color: #fff;
     position: relative;
-    margin-left: 30px;
     &__text {
       padding: 20px;
       font-size: 15px;
@@ -46,7 +45,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price {
     &-block {
       justify-content: center;

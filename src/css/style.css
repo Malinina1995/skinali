@@ -549,9 +549,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .price-block__card {
@@ -559,8 +559,7 @@ button {
 
 .price-card {
   background-color: #fff;
-  position: relative;
-  margin-left: 30px; }
+  position: relative; }
   .price-card__text {
     padding: 20px;
     font-size: 15px; }
@@ -591,10 +590,37 @@ button {
     z-index: 99;
     bottom: -80px; }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     .price-block__card {
       margin: 20px; } }
+
+.step {
+  text-align: center; }
+  .step__title {
+    font-size: 18px; }
+  .step__text {
+    max-width: 160px;
+    margin: auto auto 30px; }
+  .steps {
+    background-color: #f1f1f1; }
+    .steps-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+@media (max-width: 991px) {
+  .step {
+    width: 33%; } }
+
+@media (max-width: 576px) {
+  .step {
+    width: 100%; } }
